@@ -1,0 +1,18 @@
+@import '../utils/mixins';
+header {
+  @include mobile {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    background: var(--White, #fff);
+    box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
+
+    .logo {
+      width: 100%;
+      max-width: 170px;
+      padding: 23px 0px 10px 0px;
+    }
+    
+  }
+  
+}
