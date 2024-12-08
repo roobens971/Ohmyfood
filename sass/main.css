@@ -1,7 +1,5 @@
-/***base***/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,700&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-/***layouts***/
 /*Responsive*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,700&display=swap");
 @media screen and (max-width: 767px) {
@@ -83,5 +81,16 @@ button a {
   font-family: "Roboto", serif;
 }
 
-/***utils***/
-/*Responsive*//*# sourceMappingURL=main.css.map */
+/*Responsive*/
+/***Fonctionnement***/
+@media screen and (max-width: 767px) {
+  .fonctionnement {
+    background: #fff;
+  }
+  .fonctionnement h1 {
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 50px 0px 0px 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
