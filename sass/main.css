@@ -86,21 +86,6 @@ button a {
 @media screen and (max-width: 767px) {
   .fonctionnement {
     background: #fff;
-    /*.composez {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 25px;
-
-      background: $fonct-container;
-      width: 100%;
-      height: 70px;
-      border-radius: 20px;
-      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-      padding: 20px 0px 20px 53px;
-
-    }*/
   }
   .fonctionnement h1 {
     font-family: "Roboto", serif;
@@ -128,17 +113,29 @@ button a {
   .fonctionnement .Choisissez {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
     justify-content: flex-start;
+    gap: 25px;
+    align-items: baseline;
     background: #F6F6F6;
     width: 100%;
     height: 70px;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     padding: 20px 0px 20px 53px;
-    gap: 25px;
+    font-family: "Roboto", serif;
   }
-  .fonctionnement p {
+  .fonctionnement .composez {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 25px;
+    align-items: center;
+    background: #F6F6F6;
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px 0px 20px 53px;
     font-family: "Roboto", serif;
   }
 }
@@ -149,8 +146,8 @@ button a {
   fill: #7E7E7E;
 }
 
-/*.list-ul {
+.list-ul {
   width: 14px;
-height: 21px;
-fill: $icon-color;
-}*//*# sourceMappingURL=main.css.map */
+  height: 21px;
+  fill: #7E7E7E;
+}/*# sourceMappingURL=main.css.map */
