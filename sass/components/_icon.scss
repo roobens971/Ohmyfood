@@ -1,0 +1,18 @@
+@include mobile {
+.mobile-screen-button {
+  width: 17px;
+  height: 21px;
+  fill: $icon-color;
+}
+.list-ul {
+  width: 17px;
+  height: 21px;
+  fill: $icon-color;
+}
+
+
+.fa-store {
+  color: $primaryBtn;
+  font-size: 17px;
+}  
+}

@@ -1,0 +1,47 @@
+/***Fonctionnement***/
+.fonctionnement {
+  @include mobile {
+    background: #fff;
+
+    h1 {
+      @include h1-title;
+    }
+
+    span.step {
+      background: $primaryBtn;
+      font-family: $font-text;
+      border-radius: 0.8em;
+      color: #ffffff;
+      line-height: 1.6em;
+      text-align: center;
+      width: 1.6em;
+      margin-left: -65px;
+      font-size: 15px;
+    }
+
+    .fonctionnement-box {
+      padding: 30px 20px 0px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .Choisissez {
+      @include flex;
+      align-items: baseline;
+      @include fonct-container;
+    }
+
+    .composez {
+      @include flex;
+      align-items: center;
+      @include fonct-container;
+    }
+
+    .degustez {
+      @include flex;
+      align-items: center;
+      @include fonct-container;
+    }
+  }
+}

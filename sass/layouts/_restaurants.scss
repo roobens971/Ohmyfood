@@ -1,0 +1,14 @@
+/*@import '../utils/mixins';
+@import '../utils/variables';
+
+.restaurants {
+  @include mobile {
+    background: #f6f6f6;
+    margin-top: 50px;
+    h1 {
+        @include h1-title;
+      }
+
+
+  }
+}*/
