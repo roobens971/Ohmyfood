@@ -154,19 +154,20 @@ button a {
   }
 }
 
-.mobile-screen-button {
-  width: 17px;
-  height: 21px;
-  fill: #7E7E7E;
+@media screen and (max-width: 767px) {
+  .mobile-screen-button {
+    width: 17px;
+    height: 21px;
+    fill: #7E7E7E;
+  }
+  .list-ul {
+    width: 17px;
+    height: 21px;
+    fill: #7E7E7E;
+  }
+  .fa-store {
+    color: #9356dc;
+    font-size: 17px;
+  }
 }
-
-.list-ul {
-  width: 17px;
-  height: 21px;
-  fill: #7E7E7E;
-}
-
-.fa-store {
-  color: #9356dc;
-  font-size: 17px;
-}/*# sourceMappingURL=main.css.map */
+/*@import "layouts/restaurants";*//*# sourceMappingURL=main.css.map */

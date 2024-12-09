@@ -34,4 +34,11 @@
   font-family: $font-text;
 }
 
+@mixin h1-title {
+  font-family: $font-text;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 50px 0px 0px 20px;
+}
+
 
