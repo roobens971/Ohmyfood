@@ -35,12 +35,16 @@
       @include fonct-container;
     }
 
-
     .composez {
       @include flex;
       align-items: center;
       @include fonct-container;
+    }
 
+    .degustez {
+      @include flex;
+      align-items: center;
+      @include fonct-container;
     }
   }
 }
