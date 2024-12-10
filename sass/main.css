@@ -218,22 +218,15 @@ button a {
     justify-items: end;
     align-items: center;
   }
-  .restaurants .top-right {
-    font-family: "Roboto", serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #008766;
-    border-radius: 2px;
-    background: #99E2D0;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 8px 13px 5px 13px;
-    width: 80px;
-    float: right;
-    margin-top: -170px;
-    position: relative;
-    margin-right: 10px;
+  .restaurants .container_card_3 {
+    padding: 10px 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    align-items: center;
+    gap: 70px;
   }
-  .restaurants .top-right-note {
+  .restaurants .top-right {
     font-family: "Roboto", serif;
     font-size: 14px;
     font-weight: 500;

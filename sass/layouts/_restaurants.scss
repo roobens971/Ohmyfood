@@ -30,12 +30,12 @@
       @include grid;
     }
 
-    .top-right {
-      @include nouveau-top;
-     
+    .container_card_3{
+      @include grid;
+      gap: 70px;
     }
 
-    .top-right-note{
+    .top-right {
       @include nouveau-top;
      
     }
