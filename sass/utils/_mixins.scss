@@ -41,4 +41,42 @@
   margin: 50px 0px 0px 20px;
 }
 
+@mixin grid {
+  padding: 10px 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+  align-items: center;
+}
 
+@mixin restaurants-card {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  width: 100%;
+  height: 260px;
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 20px;
+}
+
+@mixin restaurants-images{
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+@mixin nouveau-top {
+  font-family: $font-text;
+  font-size: 14px;
+  font-weight: 500;
+  color: $green-font;
+  border-radius: 2px;
+  background: $green;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 8px 13px 5px 13px;
+  width: 80px;
+  float: right;
+  margin-top: -170px;
+  position: relative;
+  margin-right: 10px;
+}
