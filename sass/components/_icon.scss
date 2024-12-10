@@ -1,18 +1,25 @@
 @include mobile {
-.mobile-screen-button {
-  width: 17px;
-  height: 21px;
-  fill: $icon-color;
-}
-.list-ul {
-  width: 17px;
-  height: 21px;
-  fill: $icon-color;
-}
+  .mobile-screen-button {
+    width: 17px;
+    height: 21px;
+    fill: $icon-color;
+  }
+  .list-ul {
+    width: 17px;
+    height: 21px;
+    fill: $icon-color;
+  }
 
+  .fa-store {
+    color: $primaryBtn;
+    font-size: 17px;
+  }
 
-.fa-store {
-  color: $primaryBtn;
-  font-size: 17px;
-}  
+  .like {
+    width: 22px;
+    height: 21px;
+    fill: none;
+    stroke: #101010;
+    margin-bottom: 10px;
+  }
 }

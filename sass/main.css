@@ -169,5 +169,76 @@ button a {
     color: #9356dc;
     font-size: 17px;
   }
+  .like {
+    width: 22px;
+    height: 21px;
+    fill: none;
+    stroke: #101010;
+    margin-bottom: 10px;
+  }
 }
-/*@import "layouts/restaurants";*//*# sourceMappingURL=main.css.map */
+/*Responsive*/
+@media screen and (max-width: 767px) {
+  .restaurants {
+    background: #f6f6f6;
+    margin-top: 50px;
+    padding: 1px 20px 0px 20px;
+  }
+  .restaurants h1 {
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 50px 0px 0px 20px;
+    margin-left: 0;
+  }
+  .restaurants .card {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    width: 100%;
+    height: 260px;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 30px;
+  }
+  .restaurants .description {
+    font-family: "Roboto", serif;
+    line-height: 25px;
+  }
+  .restaurants h4 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .restaurants p {
+    font-weight: 300;
+    font-size: 17px;
+  }
+  .restaurants .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .restaurants .container {
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    align-items: center;
+  }
+  .restaurants img {
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 180px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants .top-right {
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #008766;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -40px;
+    right: 30px;
+    background: #99E2D0;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 8px 13px 5px 13px;
+  }
+}/*# sourceMappingURL=main.css.map */
