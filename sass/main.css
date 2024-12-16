@@ -110,6 +110,7 @@ button a {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    cursor: context-menu;
   }
   .fonctionnement .Choisissez {
     display: flex;
