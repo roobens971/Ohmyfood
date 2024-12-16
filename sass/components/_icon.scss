@@ -1,3 +1,4 @@
+@import "../utils/variables";
 @include mobile {
   .mobile-screen-button {
     width: 17px;
@@ -15,11 +16,57 @@
     font-size: 17px;
   }
 
-  .like {
-    width: 22px;
-    height: 21px;
-    fill: none;
-    stroke: #101010;
-    margin-bottom: 10px;
+  .checkbox-container {
+    position: relative;
+    display: inline-block;
   }
+
+  input[type="checkbox"] {
+    display: none; /* Cache la case à cocher */
+  }
+
+  label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .default-icon,
+  .hover-icon{
+    font-size: 24px;
+    color: #101010; /* Couleur par défaut */
+    opacity: 0.8;
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  .hover-icon {
+    position: absolute;
+    opacity: 0;
+    color: color-mix(
+      in srgb,
+      $primaryBtn 100%,
+      $secondaryBtn 100%
+    ); /* Couleur du hover */
+  }
+
+   input[type="checkbox"]:checked + label .default-icon {
+    opacity: 0;
+    /* Cache l'icône par défaut quand coché */
+  }
+
+ input[type="checkbox"]:checked + label .hover-icon {
+    opacity: 1;
+    /* Affiche l'icône active quand coché */
+  }
+
+  label:hover .hover-icon {
+    opacity: 1;
+  }
+
+  label:hover .default-icon {
+    opacity: 0;
+  }
+
+
 }

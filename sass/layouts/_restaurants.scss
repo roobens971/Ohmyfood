@@ -14,7 +14,7 @@
       margin-left: 0;
     }
 
-      img {
+    img {
       @include restaurants-images;
     }
 
@@ -30,14 +30,14 @@
       @include grid;
     }
 
-    .container_card_3{
-      @include grid;
-      gap: 70px;
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
     }
 
     .top-right {
       @include nouveau-top;
-     
     }
 
     .description {
