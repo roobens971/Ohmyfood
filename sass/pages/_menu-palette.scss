@@ -1,0 +1,20 @@
+.container-menu {
+  @include mobile {
+    margin-top: -50px;
+    position: relative;
+
+    .title-heart {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background: $fonct-container;
+      margin-top: -50px;
+      position: relative;
+      padding: 20px;
+    }
+    h1 {
+      font-family: $font-Shrikhand;
+      font-size: 27px;
+    }
+  }
+}

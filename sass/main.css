@@ -429,4 +429,24 @@ footer .mentions-contact {
     width: 100%;
     height: 275px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .container-menu {
+    margin-top: -50px;
+    position: relative;
+  }
+  .container-menu .title-heart {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #F6F6F6;
+    margin-top: -50px;
+    position: relative;
+    padding: 20px;
+  }
+  .container-menu h1 {
+    font-family: "Shrikhand", serif;
+    font-size: 27px;
+  }
 }/*# sourceMappingURL=main.css.map */
