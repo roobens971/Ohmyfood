@@ -1,0 +1,23 @@
+.header-box {
+  @include mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: none;
+
+    .logo {
+      width: 100%;
+      max-width: 170px;
+      padding: 23px 0px 10px 0px;
+    }
+
+    .fa-arrow-left {
+      margin-left: -50px;
+      font-size: 23px;
+      cursor: pointer;
+      color: $text-color;
+      margin-top: 5px;
+    }
+  }
+}
