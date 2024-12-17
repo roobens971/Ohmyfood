@@ -1,0 +1,86 @@
+.loader-container {
+  @include mobile {
+    /* Loader Container */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $btnColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    animation: fadeOut 5s ease forwards; /* Add timeout for loader fade */
+
+    /* Loading Logo */
+    .loader-logo img {
+      width: 200px; /* Adjust logo size */
+      height: auto;
+      margin-bottom: 20px;
+      animation: logoScale 5s infinite alternate ease-in-out;
+    }
+
+    /* Spinner Animation */
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #ddd;
+      border-top-color: #0078ff;
+      border-radius: 50%;
+      animation: spin 3s linear infinite;
+    }
+
+    /* Fade out the loader after the timeout */
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+        visibility: visible;
+      }
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    /* Logo Scale Animation */
+    @keyframes logoScale {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    /* Spinner Rotation */
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Page Content Hidden Initially */
+    .content {
+      display: none;
+    }
+
+    /* Show Content after Loader Fades */
+    @media (prefers-reduced-motion: no-preference) {
+      .content {
+        display: block;
+        opacity: 0;
+        animation: showContent 1s ease forwards 3s; /* Delay matching loader timeout */
+      }
+    }
+
+    /* Fade in Page Content */
+    @keyframes showContent {
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}
