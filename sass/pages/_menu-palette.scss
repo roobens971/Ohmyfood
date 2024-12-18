@@ -2,19 +2,20 @@
   @include mobile {
     margin-top: -50px;
     position: relative;
-
+    background: $fonct-container;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     .title-heart {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
-      background: $fonct-container;
-      margin-top: -50px;
-      position: relative;
-      padding: 20px;
+      justify-content: space-around;
+      margin-top: -65px;
+      padding: 35px 25px 15px 10px;
     }
     h1 {
       font-family: $font-Shrikhand;
       font-size: 27px;
+      margin-left: -15px;
     }
   }
 }
