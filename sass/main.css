@@ -321,7 +321,8 @@ footer .info-ft {
 footer .mentions-contact {
   font-weight: 300;
   font-size: 16px;
-<<<<<<< HEAD
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 767px) {
@@ -511,8 +512,4 @@ footer .mentions-contact {
     font-weight: 300;
     font-size: 15px;
   }
-=======
-  text-decoration: none;
-  color: #fff;
->>>>>>> 5b24406ccc1121753465f5859af7fc936371c9f1
 }/*# sourceMappingURL=main.css.map */
