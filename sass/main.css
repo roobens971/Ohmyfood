@@ -215,7 +215,7 @@
   .restaurants {
     background: #f6f6f6;
     margin-top: 50px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 70px 20px;
     display: flex;
     flex-direction: column;
   }
@@ -291,7 +291,7 @@
     font-family: "Roboto", serif;
     color: white;
     padding: 25px;
-    margin-top: 70px;
+    margin: 0;
   }
 }
 footer h4 {
@@ -439,6 +439,7 @@ footer .mentions-contact {
     background: #F6F6F6;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    margin-bottom: -70px;
   }
   .container-menu .title-heart {
     display: flex;
@@ -851,4 +852,39 @@ footer .mentions-contact {
     background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
     opacity: 0.7;
   }
+}
+@media screen and (max-width: 767px) {
+  .footer-container {
+    background: #353535;
+    font-family: "Roboto", serif;
+    color: white;
+    padding: 25px;
+    margin-top: 70px;
+  }
+}
+.footer-container h4 {
+  font-family: "Shrikhand", serif;
+  width: 100%;
+  font-size: 18px;
+}
+.footer-container .footer-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  line-height: 27px;
+}
+.footer-container .ft-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-container .info-ft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-container .mentions-contact {
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
