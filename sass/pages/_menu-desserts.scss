@@ -1,0 +1,154 @@
+/*DESSERTS*/
+.menu-desserts {
+    @include mobile {
+      @include entrees_plats_desserts_flex;
+      margin-top: 45px;
+  
+      .titre-listes {
+        @include entrees_plats_desserts_titres;
+  
+        span {
+          @include entrees_plats_desserts_titres_span;
+        }
+      }
+    }
+  }
+
+  .caisson {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+  
+      &__textes &__paragraphe {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+      }
+  
+      &__textes strong {
+        font-weight: 500;
+        font-size: 18px;
+      }
+  
+      &__textes {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+      }
+  
+      .container {
+        position: relative;
+      }
+  
+      .container strong {
+        margin: 0;
+      }
+  
+      .container &__paragraphe{
+        font-size: 14px;
+        margin-top: -10px;
+        right: -40px; /* Start hidden outside */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        animation: slide-in 0.3s forwards;
+        opacity: 0; /* Hidden by default */
+        overflow: hidden;
+      }
+  
+      .hidden-checkbox {
+        display: none;
+      }
+  
+      &__interactive--desserts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        background: white;
+        box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 10px 15px 10px 15px;
+        gap: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+  
+      &__prix {
+        transition: transform 0.3s ease;
+        margin-top: 25px;
+      }
+  
+      &__circle {
+        width: 50px;
+        height: 70px;
+        background-color: $tertiaryBtn;
+        border-radius: 0px 15px 15px 0px;
+        position: absolute;
+        right: -40px; /* Start hidden outside */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        animation: slide-in 0.3s forwards;
+        opacity: 0; /* Hidden by default */
+      }
+  
+      .fa-circle-check {
+        padding: 25px 10px 15px 13px;
+        font-size: 20px;
+        color: #fff;
+      }
+  
+      @keyframes slide-in {
+        from {
+          right: -40px;
+          opacity: 0;
+        }
+        to {
+          right: 10px;
+          opacity: 1;
+        }
+      }
+  
+      @keyframes slide-out {
+        from {
+          right: 10px;
+          opacity: 1;
+        }
+        to {
+          right: -40px;
+          opacity: 0;
+        }
+      }
+  
+      &__interactive--desserts &__paragraphe{
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+  
+      .hidden-checkbox:checked + &__interactive--desserts &__paragraphe {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: calc(100% - 50px);
+      }
+  
+      /* Checked Styles */
+      .hidden-checkbox:checked + &__interactive--desserts &__prix {
+        transform: translateX(-50px);
+      }
+  
+      .hidden-checkbox:checked + &__interactive--desserts &__circle {
+        opacity: 1;
+        animation: slide-in 0.3s forwards;
+        transform: translateX(10px);
+      }
+  
+      .hidden-checkbox:not(:checked) + &__interactive--desserts &__circle {
+        animation: slide-out 0.3s forwards;
+        opacity: 0;
+      }
+    }
+  }
+  

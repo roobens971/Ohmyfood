@@ -12,21 +12,6 @@
   }
 }
 
-/*PLATS*/
-.menu-plats {
-  @include mobile {
-    @include entrees_plats_desserts_flex;
-    margin-top: 45px;
-
-    .titre-listes {
-      @include entrees_plats_desserts_titres;
-
-      span {
-        @include entrees_plats_desserts_titres_span;
-      }
-    }
-  }
-}
 
 .caisson {
   @include mobile {
