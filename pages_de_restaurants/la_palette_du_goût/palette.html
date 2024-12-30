@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ohmyfood</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Icon logo-->
+    <link rel="icon" href="/images/logo/ohmyfood@2x.svg" />
+
+    <!--Font-awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Minireset-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+    />
+    <link href="/sass/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header-box">
+      <div>
+        <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+      </div>
+      <img class="logo" src="/images/logo/ohmyfood.png" alt="logo" />
+    </header>
+
+    <!--Images-->
+    <div>
+      <img
+        class="img-menu"
+        src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="image -la palette"
+      />
+    </div>
+    <!--Titre et j'aime-->
+    <div class="container-menu">
+      <div class="title-heart">
+        <h1>La palette du goût</h1>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="like-checkbox" />
+          <label for="like-checkbox">
+            <i class="fa-regular fa-heart default-icon"></i>
+            <i class="fa-solid fa-heart hover-icon"></i>
+          </label>
+        </div>
+      </div>
+
+      <!--Menu entreés-->
+      <div class="menu-entrees">
+        <div class="titre-listes">
+          <span>entrées</span>
+        </div>
+
+        <!--menu-listes Fricassée-->
+        <div class="caisson">
+          <div class="caisson__listes">
+            <input type="checkbox" id="toggle" class="hidden-checkbox" />
+            <label for="toggle" class="caisson__interactive">
+              <span class="caisson__textes">
+                <strong>Fricassée d'escargot</strong>
+                <span class="caisson__paragraphe">Au piment d'Espelette</span>
+              </span>
+              <span class="caisson__prix">25€</span>
+              <span class="caisson__circle">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </label>
+          </div>
+          <!--menu-listes Foie gras-->
+          <div class="caisson">
+            <input type="checkbox" id="toggle-2" class="hidden-checkbox" />
+            <label for="toggle-2" class="caisson__interactive">
+              <span class="caisson__textes">
+                <strong>Foie gras de canard mi-cuit</strong>
+                <span class="caisson__paragraphe"
+                  >Et ses copeaux de truffe noire</span
+                >
+              </span>
+              <span class="caisson__prix">35€</span>
+              <span class="caisson__circle">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </label>
+          </div>
+          <!--menu-listes Œuf au plat-->
+          <div class="caisson">
+            <input type="checkbox" id="toggle-3" class="hidden-checkbox" />
+            <label for="toggle-3" class="caisson__interactive">
+              <span class="caisson__textes">
+                <strong>Œuf au plat</strong>
+                <span class="caisson__paragraphe"
+                  >Assaisonné à la truffe sur lit de caviar</span
+                >
+              </span>
+              <span class="caisson__prix">20€</span>
+              <span class="caisson__circle">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
