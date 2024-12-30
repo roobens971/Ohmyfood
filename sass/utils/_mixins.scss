@@ -92,4 +92,30 @@
   gap: 10px;
 }
 
+@mixin entrees_plats_desserts_flex {
+  font-family: $font-text;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+@mixin entrees_plats_desserts_titres{
+  color: #000;
+  text-transform: uppercase;
+  position: relative;
+  border-bottom: 3px solid $tertiaryBtn;
+  width: 40px;
+  margin-left: 15px;
+}
+
+@mixin entrees_plats_desserts_titres_span{
+  font-weight: 300;
+  font-size: 16px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  bottom: 5px;
+}
+
 

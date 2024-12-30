@@ -1,25 +1,28 @@
 .menu-entrees {
   @include mobile {
-    font-family: $font-text;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    @include entrees_plats_desserts_flex;
+
     .titre-listes {
-      color: #000;
-      text-transform: uppercase;
-      position: relative;
-      border-bottom: 3px solid $tertiaryBtn;
-      width: 40px;
-      margin-left: 15px;
+      @include entrees_plats_desserts_titres;
 
       span {
-        font-weight: 300;
-        font-size: 16px;
-        position: relative;
-        margin: 0;
-        padding: 0;
-        bottom: 5px;
+        @include entrees_plats_desserts_titres_span;
+      }
+    }
+  }
+}
+
+/*PLATS*/
+.menu-plats {
+  @include mobile {
+    @include entrees_plats_desserts_flex;
+    margin-top: 45px;
+
+    .titre-listes {
+      @include entrees_plats_desserts_titres;
+
+      span {
+        @include entrees_plats_desserts_titres_span;
       }
     }
   }
@@ -29,7 +32,6 @@
   @include mobile {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     margin-top: 15px;
 
     &__textes &__paragraphe {
@@ -57,7 +59,7 @@
       margin: 0;
     }
 
-    .container &__paragraphe {
+    .container &__paragraphe{
       font-size: 14px;
       margin-top: -10px;
       right: -40px; /* Start hidden outside */
@@ -132,7 +134,7 @@
       }
     }
 
-    &__interactive &paragraphe {
+    &__interactive &__paragraphe{
       width: 100%;
       text-overflow: ellipsis;
       overflow: hidden;

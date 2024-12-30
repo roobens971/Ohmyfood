@@ -481,11 +481,38 @@ footer .mentions-contact {
   }
 }
 
+/*PLATS*/
+@media screen and (max-width: 767px) {
+  .menu-plats {
+    font-family: "Roboto", serif;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 45px;
+  }
+  .menu-plats .titre-listes {
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    border-bottom: 3px solid #99e2d0;
+    width: 40px;
+    margin-left: 15px;
+  }
+  .menu-plats .titre-listes span {
+    font-weight: 300;
+    font-size: 16px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom: 5px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .caisson {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     margin-top: 15px;
     /* Checked Styles */
   }
@@ -576,7 +603,7 @@ footer .mentions-contact {
       opacity: 0;
     }
   }
-  .caisson__interactive .caissonparagraphe {
+  .caisson__interactive .caisson__paragraphe {
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -597,6 +624,51 @@ footer .mentions-contact {
     transform: translateX(10px);
   }
   .hidden-checkbox:not(:checked) + .caisson__interactive .caisson__circle {
+    animation: slide-out 0.3s forwards;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .caisson {
+    /* Checked Styles */
+  }
+  .caisson__interactive--plats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: white;
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+    gap: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .caisson__interactive--plats .caisson__paragraphe {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .hidden-checkbox:checked + .caisson__interactive--plats .caisson__paragraphe {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(100% - 50px);
+  }
+  .hidden-checkbox:checked + .caisson__interactive--plats .caisson__prix {
+    transform: translateX(-50px);
+  }
+  .hidden-checkbox:checked + .caisson__interactive--plats .caisson__circle {
+    opacity: 1;
+    animation: slide-in 0.3s forwards;
+    transform: translateX(10px);
+  }
+  .hidden-checkbox:not(:checked) + .caisson__interactive--plats .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
