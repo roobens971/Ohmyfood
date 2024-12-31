@@ -1,0 +1,52 @@
+.caisson {
+    @include mobile {
+      &__interactive--dess_note {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        background: white;
+        box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 10px 15px 10px 15px;
+        gap: 17px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+  
+  
+  
+      &__interactive--dess_note &__paragraphe{
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+  
+      .hidden-checkbox:checked +   &__interactive--dess_note  &__paragraphe{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: calc(100% - 50px);
+      }
+  
+      /* Checked Styles */
+      .hidden-checkbox:checked +  &__interactive--dess_note &__prix{
+        transform: translateX(-50px);
+      }
+  
+      .hidden-checkbox:checked +   &__interactive--dess_note &__circle {
+        opacity: 1;
+        animation: slide-in 0.3s forwards;
+        transform: translateX(10px);
+      }
+  
+      .hidden-checkbox:not(:checked) + &__interactive--dess_note &__circle {
+        animation: slide-out 0.3s forwards;
+        opacity: 0;
+      }
+    }
+  }
+  
