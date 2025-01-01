@@ -15,6 +15,19 @@
   }
 }
 
+/*Desktop*/
+header {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  background: var(--White, #fff);
+}
+header .logo {
+  width: 100%;
+  max-width: 180px;
+  padding: 30px 0px 20px 0px;
+}
+
 /***Section location***/
 @media screen and (max-width: 767px) {
   .location {
@@ -35,6 +48,23 @@
   }
 }
 
+/*.location{
+  font-family: $font-text;
+  background-color: #eaeaea;
+  box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
+
+  .location,
+  i,
+  h4 {
+    color: $text-color;
+  }
+}*/
 /***Section Title reservation***/
 @media screen and (max-width: 767px) {
   .title-reservation {
@@ -55,6 +85,25 @@
     margin-top: 10px;
   }
 }
+/*.title-reservation {
+  text-align: center;
+  padding: 30px 30px;
+  background-color: #f6f6f6;
+
+  h1 {
+    font-family: $font-text;
+    font-size: 26.3px;
+    font-weight: 700;
+  }
+
+  p {
+    font-family: $font-text;
+    color: $text-color;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+}*/
 @media screen and (max-width: 767px) {
   a {
     color: #fff;
@@ -399,6 +448,11 @@ footer .mentions-contact {
       opacity: 1;
     }
   }
+}
+
+/*Desktop*/
+.loader-container {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
