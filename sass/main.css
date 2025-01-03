@@ -200,7 +200,7 @@ a {
     justify-content: flex-start;
     gap: 25px;
     align-items: baseline;
-    background: #F6F6F6;
+    background: #f6f6f6;
     width: 100%;
     height: 70px;
     border-radius: 20px;
@@ -214,7 +214,7 @@ a {
     justify-content: flex-start;
     gap: 25px;
     align-items: center;
-    background: #F6F6F6;
+    background: #f6f6f6;
     width: 100%;
     height: 70px;
     border-radius: 20px;
@@ -228,7 +228,7 @@ a {
     justify-content: flex-start;
     gap: 25px;
     align-items: center;
-    background: #F6F6F6;
+    background: #f6f6f6;
     width: 100%;
     height: 70px;
     border-radius: 20px;
@@ -274,7 +274,7 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     width: 25%;
     height: 70px;
     border-radius: 20px;
@@ -285,7 +285,7 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     width: 25%;
     height: 70px;
     border-radius: 20px;
@@ -296,7 +296,7 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     width: 25%;
     height: 70px;
     border-radius: 20px;
@@ -306,12 +306,12 @@ a {
   .fonctionnement .list-ul {
     width: 17px;
     height: 20px;
-    fill: #7E7E7E;
+    fill: #7e7e7e;
   }
   .fonctionnement .mobile-screen-button {
     height: 20px;
     width: 17px;
-    fill: #7E7E7E;
+    fill: #7e7e7e;
   }
   .fonctionnement .fa-store {
     color: #9356dc;
@@ -322,12 +322,12 @@ a {
   .mobile-screen-button {
     width: 17px;
     height: 21px;
-    fill: #7E7E7E;
+    fill: #7e7e7e;
   }
   .list-ul {
     width: 17px;
     height: 21px;
-    fill: #7E7E7E;
+    fill: #7e7e7e;
   }
   .fa-store {
     color: #9356dc;
@@ -337,7 +337,7 @@ a {
     position: relative;
     display: inline-block;
   }
-  input[type=checkbox] {
+  input[type="checkbox"] {
     display: none; /* Cache la case à cocher */
   }
   label {
@@ -357,13 +357,14 @@ a {
   .hover-icon {
     position: absolute;
     opacity: 0;
-    color: color-mix(in srgb, #9356dc 100%, #ff79da 100%); /* Couleur du hover */
+    /* Couleur du hover */
+    color: #c968db;
   }
-  input[type=checkbox]:checked + label .default-icon {
+  input[type="checkbox"]:checked + label .default-icon {
     opacity: 0;
     /* Cache l'icône par défaut quand coché */
   }
-  input[type=checkbox]:checked + label .hover-icon {
+  input[type="checkbox"]:checked + label .hover-icon {
     opacity: 1;
     /* Affiche l'icône active quand coché */
   }
@@ -377,13 +378,13 @@ a {
 .mobile-screen-button {
   width: 17px;
   height: 21px;
-  fill: #7E7E7E;
+  fill: #7e7e7e;
 }
 
 .list-ul {
   width: 17px;
   height: 21px;
-  fill: #7E7E7E;
+  fill: #7e7e7e;
 }
 
 .fa-store {
@@ -396,7 +397,7 @@ a {
   display: inline-block;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none; /* Cache la case à cocher */
 }
 
@@ -419,15 +420,16 @@ label {
 .hover-icon {
   position: absolute;
   opacity: 0;
-  color: color-mix(in srgb, #9356dc 100%, #ff79da 100%); /* Couleur du hover */
+  /* Couleur du hover */
+  color: #c968db;
 }
 
-input[type=checkbox]:checked + label .default-icon {
+input[type="checkbox"]:checked + label .default-icon {
   opacity: 0;
   /* Cache l'icône par défaut quand coché */
 }
 
-input[type=checkbox]:checked + label .hover-icon {
+input[type="checkbox"]:checked + label .hover-icon {
   opacity: 1;
   /* Affiche l'icône active quand coché */
 }
@@ -477,8 +479,8 @@ label:hover .default-icon {
     border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 180px;
-    -o-object-fit: cover;
-       object-fit: cover;
+
+    object-fit: cover;
   }
   .flex-card .card {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
@@ -509,7 +511,7 @@ label:hover .default-icon {
     font-weight: 500;
     color: #008766;
     border-radius: 2px;
-    background: #99E2D0;
+    background: #99e2d0;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 8px 13px 5px 13px;
     width: 80px;
@@ -559,8 +561,7 @@ label:hover .default-icon {
     border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 180px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .flex-card .card {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
@@ -593,7 +594,7 @@ label:hover .default-icon {
     font-weight: 500;
     color: #008766;
     border-radius: 2px;
-    background: #99E2D0;
+    background: #99e2d0;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 8px 13px 5px 13px;
     width: 80px;
@@ -884,8 +885,8 @@ footer .mentions-contact {
   .img-menu {
     width: 100%;
     height: 275px;
-    -o-object-fit: cover;
-       object-fit: cover;
+
+    object-fit: cover;
   }
 }
 
@@ -893,7 +894,7 @@ footer .mentions-contact {
   .container-menu {
     margin-top: -50px;
     position: relative;
-    background: #F6F6F6;
+    background: #f6f6f6;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     margin-bottom: -70px;
@@ -1125,7 +1126,9 @@ footer .mentions-contact {
     animation: slide-in 0.3s forwards;
     transform: translateX(10px);
   }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--plats .caisson__circle {
+  .hidden-checkbox:not(:checked)
+    + .caisson__interactive--plats
+    .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
@@ -1259,7 +1262,9 @@ footer .mentions-contact {
     overflow: hidden;
     white-space: nowrap;
   }
-  .hidden-checkbox:checked + .caisson__interactive--desserts .caisson__paragraphe {
+  .hidden-checkbox:checked
+    + .caisson__interactive--desserts
+    .caisson__paragraphe {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -1273,7 +1278,9 @@ footer .mentions-contact {
     animation: slide-in 0.3s forwards;
     transform: translateX(10px);
   }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--desserts .caisson__circle {
+  .hidden-checkbox:not(:checked)
+    + .caisson__interactive--desserts
+    .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
@@ -1394,7 +1401,9 @@ footer .mentions-contact {
     overflow: hidden;
     white-space: nowrap;
   }
-  .hidden-checkbox:checked + .caisson__interactive--entrees .caisson__paragraphe {
+  .hidden-checkbox:checked
+    + .caisson__interactive--entrees
+    .caisson__paragraphe {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -1408,7 +1417,9 @@ footer .mentions-contact {
     animation: slide-in 0.3s forwards;
     transform: translateX(10px);
   }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--entrees .caisson__circle {
+  .hidden-checkbox:not(:checked)
+    + .caisson__interactive--entrees
+    .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
@@ -1453,7 +1464,9 @@ footer .mentions-contact {
     animation: slide-in 0.3s forwards;
     transform: translateX(10px);
   }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--note .caisson__circle {
+  .hidden-checkbox:not(:checked)
+    + .caisson__interactive--note
+    .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
@@ -1484,7 +1497,9 @@ footer .mentions-contact {
     overflow: hidden;
     white-space: nowrap;
   }
-  .hidden-checkbox:checked + .caisson__interactive--dess_note .caisson__paragraphe {
+  .hidden-checkbox:checked
+    + .caisson__interactive--dess_note
+    .caisson__paragraphe {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -1498,7 +1513,9 @@ footer .mentions-contact {
     animation: slide-in 0.3s forwards;
     transform: translateX(10px);
   }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--dess_note .caisson__circle {
+  .hidden-checkbox:not(:checked)
+    + .caisson__interactive--dess_note
+    .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
@@ -1574,7 +1591,9 @@ footer .mentions-contact {
     overflow: hidden;
     white-space: nowrap;
   }
-  .hidden-checkbox:checked + .caisson__interactive--france .caisson__paragraphe {
+  .hidden-checkbox:checked
+    + .caisson__interactive--france
+    .caisson__paragraphe {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -1588,7 +1607,9 @@ footer .mentions-contact {
     animation: slide-in 0.3s forwards;
     transform: translateX(10px);
   }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--france .caisson__circle {
+  .hidden-checkbox:not(:checked)
+    + .caisson__interactive--france
+    .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
@@ -1619,7 +1640,9 @@ footer .mentions-contact {
     overflow: hidden;
     white-space: nowrap;
   }
-  .hidden-checkbox:checked + .caisson__interactive--dess_french .caisson__paragraphe {
+  .hidden-checkbox:checked
+    + .caisson__interactive--dess_french
+    .caisson__paragraphe {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -1628,12 +1651,16 @@ footer .mentions-contact {
   .hidden-checkbox:checked + .caisson__interactive--dess_french .caisson__prix {
     transform: translateX(-50px);
   }
-  .hidden-checkbox:checked + .caisson__interactive--dess_french .caisson__circle {
+  .hidden-checkbox:checked
+    + .caisson__interactive--dess_french
+    .caisson__circle {
     opacity: 1;
     animation: slide-in 0.3s forwards;
     transform: translateX(10px);
   }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--dess_french .caisson__circle {
+  .hidden-checkbox:not(:checked)
+    + .caisson__interactive--dess_french
+    .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
@@ -1664,7 +1691,9 @@ footer .mentions-contact {
     overflow: hidden;
     white-space: nowrap;
   }
-  .hidden-checkbox:checked + .caisson__interactive--delice .caisson__paragraphe {
+  .hidden-checkbox:checked
+    + .caisson__interactive--delice
+    .caisson__paragraphe {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -1678,7 +1707,9 @@ footer .mentions-contact {
     animation: slide-in 0.3s forwards;
     transform: translateX(10px);
   }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--delice .caisson__circle {
+  .hidden-checkbox:not(:checked)
+    + .caisson__interactive--delice
+    .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
@@ -1723,7 +1754,9 @@ footer .mentions-contact {
     animation: slide-in 0.3s forwards;
     transform: translateX(10px);
   }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--deli .caisson__circle {
+  .hidden-checkbox:not(:checked)
+    + .caisson__interactive--deli
+    .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
@@ -1754,7 +1787,9 @@ footer .mentions-contact {
     overflow: hidden;
     white-space: nowrap;
   }
-  .hidden-checkbox:checked + .caisson__interactive--dess_sens .caisson__paragraphe {
+  .hidden-checkbox:checked
+    + .caisson__interactive--dess_sens
+    .caisson__paragraphe {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -1768,8 +1803,10 @@ footer .mentions-contact {
     animation: slide-in 0.3s forwards;
     transform: translateX(10px);
   }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--dess_sens .caisson__circle {
+  .hidden-checkbox:not(:checked)
+    + .caisson__interactive--dess_sens
+    .caisson__circle {
     animation: slide-out 0.3s forwards;
     opacity: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

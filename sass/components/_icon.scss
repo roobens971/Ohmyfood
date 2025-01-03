@@ -44,11 +44,8 @@
   .hover-icon {
     position: absolute;
     opacity: 0;
-    color: color-mix(
-      in srgb,
-      $primaryBtn 100%,
-      $secondaryBtn 100%
-    ); /* Couleur du hover */
+  /* Couleur du hover */
+    color: mix($primaryBtn, $secondaryBtn, 50%);
   }
 
    input[type="checkbox"]:checked + label .default-icon {
@@ -117,11 +114,8 @@ label {
 .hover-icon {
   position: absolute;
   opacity: 0;
-  color: color-mix(
-    in srgb,
-    $primaryBtn 100%,
-    $secondaryBtn 100%
-  ); /* Couleur du hover */
+ /* Couleur du hover */
+  color: mix($primaryBtn, $secondaryBtn, 50%);
 }
 
  input[type="checkbox"]:checked + label .default-icon {
