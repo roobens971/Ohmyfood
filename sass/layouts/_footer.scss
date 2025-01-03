@@ -35,3 +35,50 @@ footer {
     color: white;
   }
 }
+
+/*Desktop*/
+footer {
+  @include tablette_desktop {
+    background: $text-color;
+    font-family: $font-text;
+    color: white;
+    padding: 30px 100px 30px 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 100px;
+
+    h4 {
+      font-family: $font-Shrikhand;
+      width: 100%;
+      font-size: 18px;
+      margin-top: 7px;
+    }
+
+    .footer-text {
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px;
+      line-height: 30px;
+      gap: 30px;
+    }
+
+    .ft-paragraph {
+      @include ft-paragraph;
+    }
+
+    .info-ft {
+      @include info-ft;
+      margin-left: -15px;
+      align-items: baseline;
+    }
+
+    .mentions-contact {
+      font-weight: 300;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
