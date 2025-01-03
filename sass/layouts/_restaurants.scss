@@ -4,7 +4,16 @@
 .restaurants {
   @include mobile {
     background: #f6f6f6;
-    margin-top: 50px;
+    h1 {
+      @include h1-title;
+      margin-left: 0;
+      padding: 45px 0px 0px 25px;
+    }
+  }
+}
+
+.flex-card {
+  @include mobile {
     padding: 0px 20px 70px 20px;
     display: flex;
     flex-direction: column;
@@ -20,6 +29,71 @@
 
     .card {
       @include restaurants-card;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      @include grid;
+    }
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+    }
+
+    .top-right {
+      @include nouveau-top;
+    }
+
+    .description {
+      font-family: $font-text;
+      line-height: 25px;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 17px;
+    }
+  }
+}
+
+/*Desktop */
+.restaurants {
+  @include tablette_desktop {
+    background: #f6f6f6;
+    h1 {
+      @include h1-title;
+      margin-left: 0;
+      padding: 45px 0px 0px 200px;
+    }
+  }
+}
+
+.flex-card {
+  @include tablette_desktop {
+    padding: 0px 100px 70px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 50px;
+
+    img {
+      @include restaurants-images;
+    }
+
+    .card {
+      @include restaurants-card;
+      width: 75%;
+      height: 260px;
     }
 
     .card:hover {
