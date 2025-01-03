@@ -55,7 +55,7 @@
 
     h1 {
       @include h1-title;
-      margin: 50px 0px 0px 410px;
+      margin: 50px 0px 0px 200px;
     }
 
     span.step {
@@ -84,7 +84,7 @@
       align-items: center;
       gap: 20px;
       background: $fonct-container;
-      width: 17%;
+      width: 25%;
       height: 70px;
       border-radius: 20px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -96,7 +96,7 @@
       align-items: center;
       gap: 20px;
       background: $fonct-container;
-      width: 17%;
+      width: 25%;
       height: 70px;
       border-radius: 20px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -108,7 +108,7 @@
       align-items: center;
       gap: 20px;
       background: $fonct-container;
-      width: 17%;
+      width: 25%;
       height: 70px;
       border-radius: 20px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);

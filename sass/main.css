@@ -249,7 +249,7 @@ a {
     font-size: 24px;
     font-weight: 700;
     margin: 50px 0px 0px 20px;
-    margin: 50px 0px 0px 410px;
+    margin: 50px 0px 0px 200px;
   }
   .fonctionnement span.step {
     background: #9356dc;
@@ -275,7 +275,7 @@ a {
     align-items: center;
     gap: 20px;
     background: #F6F6F6;
-    width: 17%;
+    width: 25%;
     height: 70px;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -286,7 +286,7 @@ a {
     align-items: center;
     gap: 20px;
     background: #F6F6F6;
-    width: 17%;
+    width: 25%;
     height: 70px;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -297,7 +297,7 @@ a {
     align-items: center;
     gap: 20px;
     background: #F6F6F6;
-    width: 17%;
+    width: 25%;
     height: 70px;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -543,7 +543,7 @@ label:hover .default-icon {
     font-weight: 700;
     margin: 50px 0px 0px 20px;
     margin-left: 0;
-    padding: 45px 0px 0px 200px;
+    padding: 45px 0px 0px 225px;
   }
 }
 
@@ -570,7 +570,7 @@ label:hover .default-icon {
     border-radius: 15px 15px 15px 15px;
     margin-top: 20px;
     position: relative;
-    width: 75%;
+    width: 70%;
     height: 260px;
   }
   .flex-card .card:hover {

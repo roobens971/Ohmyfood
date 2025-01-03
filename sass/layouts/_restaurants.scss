@@ -73,7 +73,7 @@
     h1 {
       @include h1-title;
       margin-left: 0;
-      padding: 45px 0px 0px 200px;
+      padding: 45px 0px 0px 225px;
     }
   }
 }
@@ -92,7 +92,7 @@
 
     .card {
       @include restaurants-card;
-      width: 75%;
+      width: 70%;
       height: 260px;
     }
 
