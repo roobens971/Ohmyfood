@@ -1,6 +1,6 @@
 /***Section Title reservation***/
-@include mobile {
-  .title-reservation {
+.title-reservation {
+  @include mobile {
     text-align: center;
     padding: 30px 30px;
     background-color: #f6f6f6;
@@ -23,21 +23,23 @@
 
 /*Desktop*/
 .title-reservation {
-  text-align: center;
-  padding: 30px 30px;
-  background-color: #f6f6f6;
+  @include tablette_desktop {
+    text-align: center;
+    padding: 30px 30px;
+    background-color: #f6f6f6;
 
-  h1 {
-    font-family: $font-text;
-    font-size: 35px;
-    font-weight: 700;
-  }
+    h1 {
+      font-family: $font-text;
+      font-size: 35px;
+      font-weight: 700;
+    }
 
-  p {
-    font-family: $font-text;
-    color: $text-color;
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 20px;
+    p {
+      font-family: $font-text;
+      color: $text-color;
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 20px;
+    }
   }
 }

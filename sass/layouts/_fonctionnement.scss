@@ -46,3 +46,89 @@
     }
   }
 }
+
+/***Fonctionnement Desktop***/
+.fonctionnement {
+  @include tablette_desktop {
+    background: #fff;
+    padding: 40px 40px;
+
+    h1 {
+      @include h1-title;
+      margin: 50px 0px 0px 410px;
+    }
+
+    span.step {
+      background: $primaryBtn;
+      font-family: $font-text;
+      border-radius: 0.8em;
+      color: #ffffff;
+      line-height: 1.6em;
+      text-align: center;
+      width: 1.6em;
+      margin-left: -10px;
+      font-size: 15px;
+    }
+
+    .fonctionnement-box {
+      padding: 30px 20px 0px 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 45px;
+      cursor: context-menu;
+    }
+
+    .Choisissez {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: $fonct-container;
+      width: 17%;
+      height: 70px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      font-family: $font-text;
+    }
+
+    .composez {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: $fonct-container;
+      width: 17%;
+      height: 70px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      font-family: $font-text;
+    }
+
+    .degustez {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: $fonct-container;
+      width: 17%;
+      height: 70px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      font-family: $font-text;
+    }
+
+    .list-ul {
+      width: 17px;
+      height: 20px;
+      fill: #7E7E7E;
+    }
+
+    .mobile-screen-button {
+      height: 20px;
+      width: 17px;
+      fill: #7E7E7E;
+    }
+
+    .fa-store {
+      color: $primaryBtn;
+    }
+  }
+}

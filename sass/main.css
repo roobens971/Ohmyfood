@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /*Responsive*/
+/*@mixin desktop {
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}*/
 @media screen and (max-width: 767px) {
   header {
     background: #fff;
@@ -84,23 +89,26 @@ header .logo {
     margin-top: 10px;
   }
 }
+
 /*Desktop*/
-.title-reservation {
-  text-align: center;
-  padding: 30px 30px;
-  background-color: #f6f6f6;
-}
-.title-reservation h1 {
-  font-family: "Roboto", serif;
-  font-size: 35px;
-  font-weight: 700;
-}
-.title-reservation p {
-  font-family: "Roboto", serif;
-  color: #353535;
-  font-size: 16px;
-  font-weight: 300;
-  margin-top: 20px;
+@media screen and (min-width: 768px) {
+  .title-reservation {
+    text-align: center;
+    padding: 30px 30px;
+    background-color: #f6f6f6;
+  }
+  .title-reservation h1 {
+    font-family: "Roboto", serif;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .title-reservation p {
+    font-family: "Roboto", serif;
+    color: #353535;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -152,6 +160,11 @@ a {
 }
 
 /*Responsive*/
+/*@mixin desktop {
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}*/
 /***Fonctionnement***/
 @media screen and (max-width: 767px) {
   .fonctionnement {
@@ -225,6 +238,86 @@ a {
   }
 }
 
+/***Fonctionnement Desktop***/
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    background: #fff;
+    padding: 40px 40px;
+  }
+  .fonctionnement h1 {
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 50px 0px 0px 20px;
+    margin: 50px 0px 0px 410px;
+  }
+  .fonctionnement span.step {
+    background: #9356dc;
+    font-family: "Roboto", serif;
+    border-radius: 0.8em;
+    color: #ffffff;
+    line-height: 1.6em;
+    text-align: center;
+    width: 1.6em;
+    margin-left: -10px;
+    font-size: 15px;
+  }
+  .fonctionnement .fonctionnement-box {
+    padding: 30px 20px 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 45px;
+    cursor: context-menu;
+  }
+  .fonctionnement .Choisissez {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #F6F6F6;
+    width: 17%;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    font-family: "Roboto", serif;
+  }
+  .fonctionnement .composez {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #F6F6F6;
+    width: 17%;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    font-family: "Roboto", serif;
+  }
+  .fonctionnement .degustez {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #F6F6F6;
+    width: 17%;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    font-family: "Roboto", serif;
+  }
+  .fonctionnement .list-ul {
+    width: 17px;
+    height: 20px;
+    fill: #7E7E7E;
+  }
+  .fonctionnement .mobile-screen-button {
+    height: 20px;
+    width: 17px;
+    fill: #7E7E7E;
+  }
+  .fonctionnement .fa-store {
+    color: #9356dc;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .mobile-screen-button {
     width: 17px;
@@ -282,6 +375,11 @@ a {
   }
 }
 /*Responsive*/
+/*@mixin desktop {
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}*/
 @media screen and (max-width: 767px) {
   .restaurants {
     background: #f6f6f6;
