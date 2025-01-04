@@ -1,19 +1,39 @@
-.bloc {
+.bloc-entrees {
   @include mobile {
-    opacity: 0; /* Invisible au départ */
-    transform: translateY(700px); /* Déplacement vers le bas */
-    animation: fadeIn 3s ease-out forwards;
-    .entrees {
-      animation-delay: 3s;
-    }
+    
+    opacity: 0;
+    transform: translateY(450px);
+    animation: fadeIn 1.5s ease-out forwards;
 
-    .plats {
-      animation-delay: 5s;
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+  }
+}
 
-    .desserts {
-      animation-delay: 5s;
+.bloc-plats {
+  @include mobile {
+    opacity: 0;
+    transform: translateY(700px);
+    animation: fadeIn 3.5s ease-out forwards;
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+  }
+}
+
+.bloc-desserts {
+  @include mobile {
+    opacity: 0;
+    transform: translateY(850px);
+    animation: fadeIn 4.5s ease-out forwards;
 
     @keyframes fadeIn {
       to {
