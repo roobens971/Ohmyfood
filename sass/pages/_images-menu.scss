@@ -5,3 +5,11 @@
         object-fit: cover;
     }
 }
+
+.img-menu {
+    @include tablette_desktop {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
