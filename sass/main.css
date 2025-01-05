@@ -886,6 +886,28 @@ footer .mentions-contact {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: none;
+  }
+  .header-box .logo {
+    width: 100%;
+    max-width: 180px;
+    padding: 30px 0px 20px 0px;
+  }
+  .header-box .fa-arrow-left {
+    margin-left: -370px;
+    font-size: 23px;
+    cursor: pointer;
+    color: #353535;
+    margin-top: 5px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .img-menu {
     width: 100%;
