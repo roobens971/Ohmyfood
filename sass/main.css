@@ -377,73 +377,97 @@ a {
     opacity: 0;
   }
 }
-.mobile-screen-button {
-  width: 17px;
-  height: 21px;
-  fill: #7E7E7E;
+@media screen and (min-width: 768px) {
+  .mobile-screen-button {
+    width: 17px;
+    height: 21px;
+    fill: #7E7E7E;
+  }
 }
 
-.list-ul {
-  width: 17px;
-  height: 21px;
-  fill: #7E7E7E;
+@media screen and (min-width: 768px) {
+  .list-ul {
+    width: 17px;
+    height: 21px;
+    fill: #7E7E7E;
+  }
 }
 
-.fa-store {
-  color: #9356dc;
-  font-size: 17px;
+@media screen and (min-width: 768px) {
+  .fa-store {
+    color: #9356dc;
+    font-size: 17px;
+  }
 }
 
-.checkbox-container {
-  position: absolute;
-  display: inline-block;
-  bottom: 35px;
-  right: 20px;
+@media screen and (min-width: 768px) {
+  .checkbox-container {
+    position: absolute;
+    display: inline-block;
+    bottom: 35px;
+    right: 20px;
+  }
 }
 
-input[type=checkbox] {
-  display: none; /* Cache la case à cocher */
+@media screen and (min-width: 768px) {
+  input[type=checkbox] {
+    display: none; /* Cache la case à cocher */
+  }
 }
 
-label {
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
 }
 
-.default-icon,
-.hover-icon {
-  font-size: 24px;
-  color: #101010; /* Couleur par défaut */
-  opacity: 0.8;
-  /*transition: color 0.3s, transform 0.3s;*/
-  transition: 3s;
+@media screen and (min-width: 768px) {
+  .default-icon,
+  .hover-icon {
+    font-size: 24px;
+    color: #101010; /* Couleur par défaut */
+    opacity: 0.8;
+    /*transition: color 0.3s, transform 0.3s;*/
+    transition: 3s;
+  }
 }
 
-.hover-icon {
-  position: absolute;
-  opacity: 0;
-  /* Couleur du hover */
-  color: #c968db;
+@media screen and (min-width: 768px) {
+  .hover-icon {
+    position: absolute;
+    opacity: 0;
+    /* Couleur du hover */
+    color: #c968db;
+  }
 }
 
-input[type=checkbox]:checked + label .default-icon {
-  opacity: 0;
-  /* Cache l'icône par défaut quand coché */
+@media screen and (min-width: 768px) {
+  input[type=checkbox]:checked + label .default-icon {
+    opacity: 0;
+    /* Cache l'icône par défaut quand coché */
+  }
 }
 
-input[type=checkbox]:checked + label .hover-icon {
-  opacity: 1;
-  /* Affiche l'icône active quand coché */
+@media screen and (min-width: 768px) {
+  input[type=checkbox]:checked + label .hover-icon {
+    opacity: 1;
+    /* Affiche l'icône active quand coché */
+  }
 }
 
-label:hover .hover-icon {
-  opacity: 1;
+@media screen and (min-width: 768px) {
+  label:hover .hover-icon {
+    opacity: 1;
+  }
 }
 
-label:hover .default-icon {
-  opacity: 0;
+@media screen and (min-width: 768px) {
+  label:hover .default-icon {
+    opacity: 0;
+  }
 }
 
 /*Responsive*/
@@ -941,6 +965,32 @@ footer .mentions-contact {
     justify-content: space-around;
     margin-top: -65px;
     padding: 35px 25px 15px 10px;
+  }
+  .container-menu h1 {
+    font-family: "Shrikhand", serif;
+    font-size: 27px;
+    margin-left: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-menu {
+    margin-top: -50px;
+    position: relative;
+    background: #F6F6F6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-bottom: -70px;
+    width: 80%;
+    left: 10%;
+  }
+  .container-menu .title-heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -65px;
+    padding: 35px 25px 15px 10px;
+    gap: 30px;
   }
   .container-menu h1 {
     font-family: "Shrikhand", serif;
@@ -1826,6 +1876,121 @@ footer .mentions-contact {
   }
   .hidden-checkbox:not(:checked) + .caisson__interactive--dess_sens .caisson__circle {
     animation: slide-out 0.3s forwards;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-screen-button {
+    width: 17px;
+    height: 21px;
+    fill: #7E7E7E;
+  }
+  .list-ul {
+    width: 17px;
+    height: 21px;
+    fill: #7E7E7E;
+  }
+  .fa-store {
+    color: #9356dc;
+    font-size: 17px;
+  }
+  .container-heart {
+    position: relative;
+    display: inline-block;
+  }
+  input[type=checkbox] {
+    display: none; /* Cache la case à cocher */
+  }
+  label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .default-icon,
+  .hover-icon {
+    font-size: 24px;
+    color: #101010; /* Couleur par défaut */
+    opacity: 0.8;
+    /*transition: color 0.3s, transform 0.3s;*/
+    transition: 3s;
+  }
+  .hover-icon {
+    position: absolute;
+    opacity: 0;
+    /* Couleur du hover */
+    color: #c968db;
+  }
+  input[type=checkbox]:checked + label .default-icon {
+    opacity: 0;
+    /* Cache l'icône par défaut quand coché */
+  }
+  input[type=checkbox]:checked + label .hover-icon {
+    opacity: 1;
+    /* Affiche l'icône active quand coché */
+  }
+  label:hover .hover-icon {
+    opacity: 1;
+  }
+  label:hover .default-icon {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-screen-button {
+    width: 17px;
+    height: 21px;
+    fill: #7E7E7E;
+  }
+  .list-ul {
+    width: 17px;
+    height: 21px;
+    fill: #7E7E7E;
+  }
+  .fa-store {
+    color: #9356dc;
+    font-size: 17px;
+  }
+  .container-heart {
+    position: relative;
+    display: inline-block;
+  }
+  input[type=checkbox] {
+    display: none; /* Cache la case à cocher */
+  }
+  label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .default-icon,
+  .hover-icon {
+    font-size: 24px;
+    color: #101010; /* Couleur par défaut */
+    opacity: 0.8;
+    /*transition: color 0.3s, transform 0.3s;*/
+    transition: 3s;
+  }
+  .hover-icon {
+    position: absolute;
+    opacity: 0;
+    /* Couleur du hover */
+    color: #c968db;
+  }
+  input[type=checkbox]:checked + label .default-icon {
+    opacity: 0;
+    /* Cache l'icône par défaut quand coché */
+  }
+  input[type=checkbox]:checked + label .hover-icon {
+    opacity: 1;
+    /* Affiche l'icône active quand coché */
+  }
+  label:hover .hover-icon {
+    opacity: 1;
+  }
+  label:hover .default-icon {
     opacity: 0;
   }
 }/*# sourceMappingURL=main.css.map */
