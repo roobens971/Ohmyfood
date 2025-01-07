@@ -51,11 +51,13 @@
 .fonctionnement {
   @include tablette_desktop {
     background: #fff;
-    padding: 40px 40px;
+    padding: 50px 50px 50px 50px;
+    
 
     h1 {
       @include h1-title;
-      margin: 50px 0px 0px 200px;
+      margin: 0px 0px 30px 0px;
+      
     }
 
     span.step {
@@ -71,11 +73,11 @@
     }
 
     .fonctionnement-box {
-      padding: 30px 20px 0px 30px;
+      
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 45px;
+      gap: 30px;
       cursor: context-menu;
     }
 
@@ -84,7 +86,7 @@
       align-items: center;
       gap: 20px;
       background: $fonct-container;
-      width: 25%;
+      width: 40%;
       height: 70px;
       border-radius: 20px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -96,7 +98,7 @@
       align-items: center;
       gap: 20px;
       background: $fonct-container;
-      width: 25%;
+      width: 40%;
       height: 70px;
       border-radius: 20px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -108,7 +110,7 @@
       align-items: center;
       gap: 20px;
       background: $fonct-container;
-      width: 25%;
+      width: 40%;
       height: 70px;
       border-radius: 20px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);

@@ -72,15 +72,16 @@
     background: #f6f6f6;
     h1 {
       @include h1-title;
-      margin-left: 0;
-      padding: 45px 0px 0px 225px;
+      margin-left: 60px;
+      padding: 30px 0px 0px 0px;
+      margin-bottom: 30px;
     }
   }
 }
 
 .flex-card {
   @include tablette_desktop {
-    padding: 0px 100px 70px 100px;
+    padding: 0px 50px 50px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -92,8 +93,7 @@
 
     .card {
       @include restaurants-card;
-      width: 70%;
-      height: 260px;
+      margin: 0;
     }
 
     .card:hover {
