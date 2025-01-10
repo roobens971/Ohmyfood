@@ -1,33 +1,27 @@
 /***Section Title reservation***/
 .title-reservation {
-  @include mobile {
-    text-align: center;
-    padding: 30px 30px;
-    background-color: #f6f6f6;
+  text-align: center;
+  padding: 30px 30px;
+  background-color: #f6f6f6;
 
-    h1 {
-      font-family: $font-text;
-      font-size: 26.3px;
-      font-weight: 700;
-    }
+  h1 {
+    font-family: $font-text;
+    font-size: 26.3px;
+    font-weight: 700;
+  }
 
-    p {
-      font-family: $font-text;
-      color: $text-color;
-      font-size: 18px;
-      font-weight: 300;
-      margin-top: 10px;
-    }
+  p {
+    font-family: $font-text;
+    color: $text-color;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
   }
 }
 
 /*Desktop*/
 .title-reservation {
   @include tablette_desktop {
-    text-align: center;
-    padding: 30px 30px;
-    background-color: #f6f6f6;
-
     h1 {
       font-family: $font-text;
       font-size: 35px;

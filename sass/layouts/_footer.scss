@@ -1,46 +1,42 @@
 footer {
-  @include mobile {
-    background: $text-color;
-    font-family: $font-text;
-    color: white;
-    padding: 25px;
-    margin: 0;
-  }
+  background: $text-color;
+  font-family: $font-text;
+  color: white;
+  padding: 25px;
+  margin: 0;
+}
 
-  h4 {
-    font-family: $font-Shrikhand;
-    width: 100%;
-    font-size: 18px;
-  }
+h4 {
+  font-family: $font-Shrikhand;
+  width: 100%;
+  font-size: 18px;
+}
 
-  .footer-text {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    line-height: 27px;
-  }
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  line-height: 27px;
+}
 
-  .ft-paragraph {
-    @include ft-paragraph;
-  }
+.ft-paragraph {
+  @include ft-paragraph;
+}
 
-  .info-ft {
-    @include info-ft;
-  }
+.info-ft {
+  @include info-ft;
+}
 
-  .mentions-contact {
-    font-weight: 300;
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-  }
+.mentions-contact {
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
 }
 
 /*Desktop*/
 footer {
   @include tablette_desktop {
-    background: $text-color;
-    font-family: $font-text;
     color: white;
     padding: 30px 100px 30px 0px;
     margin: 0;
@@ -50,8 +46,6 @@ footer {
     gap: 100px;
 
     h4 {
-      font-family: $font-Shrikhand;
-      width: 100%;
       font-size: 18px;
       margin-top: 7px;
     }
@@ -64,21 +58,10 @@ footer {
       gap: 30px;
     }
 
-    .ft-paragraph {
-      @include ft-paragraph;
-    }
-
     .info-ft {
       @include info-ft;
       margin-left: -15px;
       align-items: baseline;
-    }
-
-    .mentions-contact {
-      font-weight: 300;
-      font-size: 16px;
-      text-decoration: none;
-      color: white;
     }
   }
 }

@@ -1,10 +1,59 @@
 /***Fonctionnement***/
 .fonctionnement {
-  @include mobile {
+  background: #fff;
+
+  h1 {
+    @include h1-title;
+  }
+
+  span.step {
+    background: $primaryBtn;
+    font-family: $font-text;
+    border-radius: 0.8em;
+    color: #ffffff;
+    line-height: 1.6em;
+    text-align: center;
+    width: 1.6em;
+    margin-left: -65px;
+    font-size: 15px;
+  }
+
+  .fonctionnement-box {
+    padding: 30px 20px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    cursor: context-menu;
+  }
+
+  .Choisissez {
+    @include flex;
+    align-items: baseline;
+    @include fonct-container;
+  }
+
+  .composez {
+    @include flex;
+    align-items: center;
+    @include fonct-container;
+  }
+
+  .degustez {
+    @include flex;
+    align-items: center;
+    @include fonct-container;
+  }
+}
+
+/***Fonctionnement Desktop***/
+.fonctionnement {
+  @include tablette_desktop {
     background: #fff;
+    padding: 50px 50px 50px 50px;
 
     h1 {
       @include h1-title;
+      margin: 0px 0px 30px 0px;
     }
 
     span.step {
@@ -20,60 +69,6 @@
     }
 
     .fonctionnement-box {
-      padding: 30px 20px 0px 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      cursor: context-menu;
-    }
-
-    .Choisissez {
-      @include flex;
-      align-items: baseline;
-      @include fonct-container;
-    }
-
-    .composez {
-      @include flex;
-      align-items: center;
-      @include fonct-container;
-    }
-
-    .degustez {
-      @include flex;
-      align-items: center;
-      @include fonct-container;
-    }
-  }
-}
-
-/***Fonctionnement Desktop***/
-.fonctionnement {
-  @include tablette_desktop {
-    background: #fff;
-    padding: 50px 50px 50px 50px;
-    
-
-    h1 {
-      @include h1-title;
-      margin: 0px 0px 30px 0px;
-      
-    }
-
-    span.step {
-      background: $primaryBtn;
-      font-family: $font-text;
-      border-radius: 0.8em;
-      color: #ffffff;
-      line-height: 1.6em;
-      text-align: center;
-      width: 1.6em;
-      margin-left: -10px;
-      font-size: 15px;
-    }
-
-    .fonctionnement-box {
-      
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -120,13 +115,13 @@
     .list-ul {
       width: 17px;
       height: 20px;
-      fill: #7E7E7E;
+      fill: #7e7e7e;
     }
 
     .mobile-screen-button {
       height: 20px;
       width: 17px;
-      fill: #7E7E7E;
+      fill: #7e7e7e;
     }
 
     .fa-store {

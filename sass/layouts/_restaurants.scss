@@ -2,67 +2,63 @@
 @import "../utils/variables";
 
 .restaurants {
-  @include mobile {
-    background: #f6f6f6;
-    h1 {
-      @include h1-title;
-      margin-left: 0;
-      padding: 45px 0px 0px 25px;
-    }
+  background: #f6f6f6;
+  h1 {
+    @include h1-title;
+    margin-left: 0;
+    padding: 45px 0px 0px 25px;
   }
 }
 
 .flex-card {
-  @include mobile {
-    padding: 0px 20px 70px 20px;
-    display: flex;
-    flex-direction: column;
+  padding: 0px 20px 70px 20px;
+  display: flex;
+  flex-direction: column;
 
-    h1 {
-      @include h1-title;
-      margin-left: 0;
-    }
+  h1 {
+    @include h1-title;
+    margin-left: 0;
+  }
 
-    img {
-      @include restaurants-images;
-    }
+  img {
+    @include restaurants-images;
+  }
 
-    .card {
-      @include restaurants-card;
-    }
+  .card {
+    @include restaurants-card;
+  }
 
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
 
-    .container {
-      @include grid;
-    }
+  .container {
+    @include grid;
+  }
 
-    a {
-      cursor: pointer;
-      text-decoration: none;
-      color: black;
-    }
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
 
-    .top-right {
-      @include nouveau-top;
-    }
+  .top-right {
+    @include nouveau-top;
+  }
 
-    .description {
-      font-family: $font-text;
-      line-height: 25px;
-    }
+  .description {
+    font-family: $font-text;
+    line-height: 25px;
+  }
 
-    h4 {
-      font-size: 18px;
-      font-weight: 700;
-    }
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+  }
 
-    p {
-      font-weight: 300;
-      font-size: 17px;
-    }
+  p {
+    font-weight: 300;
+    font-size: 17px;
   }
 }
 
@@ -87,46 +83,9 @@
     justify-items: center;
     gap: 50px;
 
-    img {
-      @include restaurants-images;
-    }
-
     .card {
       @include restaurants-card;
       margin: 0;
-    }
-
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    .container {
-      @include grid;
-    }
-
-    a {
-      cursor: pointer;
-      text-decoration: none;
-      color: black;
-    }
-
-    .top-right {
-      @include nouveau-top;
-    }
-
-    .description {
-      font-family: $font-text;
-      line-height: 25px;
-    }
-
-    h4 {
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-    p {
-      font-weight: 300;
-      font-size: 17px;
     }
   }
 }
