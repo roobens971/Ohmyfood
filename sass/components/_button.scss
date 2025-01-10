@@ -1,4 +1,7 @@
 .button {
+  color: #fff;
+  text-decoration: none;
+  font-family: $font-text;
   background: $btnColor;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -12,25 +15,5 @@
   &:hover {
     background: $btnColor;
     opacity: 0.7;
-  }
-}
-
-/*Desktop*/
-.button {
-  @include tablette_desktop {
-    background: $btnColor;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    padding: 15px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 30px 2px;
-    &:hover {
-      background: $btnColor;
-      opacity: 0.7;
-    }
   }
 }
