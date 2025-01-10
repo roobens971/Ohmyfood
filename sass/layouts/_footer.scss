@@ -4,34 +4,33 @@ footer {
   color: white;
   padding: 25px;
   margin: 0;
-}
+  h4 {
+    font-family: $font-Shrikhand;
+    width: 100%;
+    font-size: 18px;
+  }
 
-h4 {
-  font-family: $font-Shrikhand;
-  width: 100%;
-  font-size: 18px;
-}
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    line-height: 27px;
+  }
 
-.footer-text {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-  line-height: 27px;
-}
+  .ft-paragraph {
+    @include ft-paragraph;
+  }
 
-.ft-paragraph {
-  @include ft-paragraph;
-}
+  .info-ft {
+    @include info-ft;
+  }
 
-.info-ft {
-  @include info-ft;
-}
-
-.mentions-contact {
-  font-weight: 300;
-  font-size: 16px;
-  text-decoration: none;
-  color: white;
+  .mentions-contact {
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+  }
 }
 
 /*Desktop*/

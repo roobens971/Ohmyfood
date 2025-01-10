@@ -1,6 +1,6 @@
 /*PLATS*/
 .menu-plats {
-    @include mobile {
+    
       @include entrees_plats_desserts_flex;
       margin-top: 45px;
   
@@ -11,11 +11,11 @@
           @include entrees_plats_desserts_titres_span;
         }
       }
-    }
+   
   }
 
 .caisson {
-  @include mobile {
+ 
     &__interactive--plats {
       display: flex;
       align-items: center;
@@ -31,8 +31,6 @@
       position: relative;
       overflow: hidden;
     }
-
-
 
     &__interactive--plats &__paragraphe{
       width: 100%;
@@ -63,12 +61,11 @@
       animation: slide-out 0.3s forwards;
       opacity: 0;
     }
-  }
 }
 
 
 
-/*PLATS*/
+/*PLATS desktop*/
 .menu-plats {
   @include tablette_desktop {
     @include entrees_plats_desserts_flex;
@@ -85,56 +82,4 @@
       }
     }
   }
-}
-
-.caisson {
-@include tablette_desktop {
-  &__interactive--plats {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background: white;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 10px 15px 10px 15px;
-    gap: 13px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-
-
-  &__interactive--plats &__paragraphe{
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  .hidden-checkbox:checked + &__interactive--plats  &__paragraphe{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: calc(100% - 50px);
-  }
-
-  /* Checked Styles */
-  .hidden-checkbox:checked + &__interactive--plats &__prix{
-    transform: translateX(-50px);
-  }
-
-  .hidden-checkbox:checked + &__interactive--plats &__circle {
-    opacity: 1;
-    animation: slide-in 0.3s forwards;
-    transform: translateX(10px);
-  }
-
-  .hidden-checkbox:not(:checked) + &__interactive--plats &__circle {
-    animation: slide-out 0.3s forwards;
-    opacity: 0;
-  }
-}
 }

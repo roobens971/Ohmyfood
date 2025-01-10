@@ -1,48 +1,33 @@
 .container-menu {
-  @include mobile {
-    margin-top: -50px;
-    position: relative;
-    background: $fonct-container;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    margin-bottom: -70px;
-    .title-heart {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      margin-top: -65px;
-      padding: 35px 25px 15px 10px;
-    }
-    h1 {
-      font-family: $font-Shrikhand;
-      font-size: 27px;
-      margin-left: -15px;
-    }
+  margin-top: -50px;
+  position: relative;
+  background: $fonct-container;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-bottom: -70px;
+  .title-heart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -65px;
+    padding: 35px 25px 15px 10px;
+  }
+  h1 {
+    font-family: $font-Shrikhand;
+    font-size: 27px;
+    margin-left: -15px;
   }
 }
 
 .container-menu {
   @include tablette_desktop {
-    margin-top: -50px;
-    position: relative;
-    background: $fonct-container;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    margin-bottom: -70px;
     width: 80%;
     left: 10%;
     .title-heart {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: -65px;
-      padding: 35px 25px 15px 10px;
       gap: 30px;
-    }
-    h1 {
-      font-family: $font-Shrikhand;
-      font-size: 27px;
-      margin-left: -15px;
     }
   }
 }

@@ -1,62 +1,31 @@
 .btn {
-  @include mobile {
-    text-align: center;
-  }
-}
-
-a {
-  @include mobile {
+  text-align: center;
+  a {
     color: #fff;
     text-decoration: none;
     font-family: $font-text;
   }
 }
-@include mobile {
-  .commander {
+
+.commander {
+  background: $btnColor;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 45px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 40px 2px;
+  &:hover {
     background: $btnColor;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    padding: 15px 45px;
-    display: inline-block;
-    font-size: 16px;
-    margin: 40px 2px;
-    &:hover {
-      background: $btnColor;
-      opacity: 0.7;
-    }
+    opacity: 0.7;
   }
 }
 
-
-.btn {
-  @include tablette_desktop{
-    text-align: center;
-  }
-}
-
-a {
-  @include tablette_desktop {
-    color: #fff;
-    text-decoration: none;
-    font-family: $font-text;
-  }
-}
+/*Desktop*/
 @include tablette_desktop {
   .commander {
-    background: $btnColor;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    padding: 15px 45px;
-    display: inline-block;
-    font-size: 16px;
     margin: 0px 0px 50px;
-    &:hover {
-      background: $btnColor;
-      opacity: 0.7;
-    }
   }
 }
