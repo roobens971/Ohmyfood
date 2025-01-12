@@ -1,0 +1,38 @@
+.bloc-entrees {
+  opacity: 0;
+  transform: translateY(450px);
+  animation: fadeIn 1.5s ease-out forwards;
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.bloc-plats {
+  opacity: 0;
+  transform: translateY(700px);
+  animation: fadeIn 3.5s ease-out forwards;
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.bloc-desserts {
+  opacity: 0;
+  transform: translateY(850px);
+  animation: fadeIn 4.5s ease-out forwards;
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
