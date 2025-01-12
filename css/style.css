@@ -1159,50 +1159,12 @@ footer .mentions-contact {
     margin: 0px 0px 50px;
   }
 }
-@media screen and (max-width: 767px) {
-  .footer-container {
-    background: #353535;
-    font-family: "Roboto", serif;
-    color: white;
-    padding: 25px;
-    margin-top: 70px;
-  }
-}
-.footer-container h4 {
-  font-family: "Shrikhand", serif;
-  width: 100%;
-  font-size: 18px;
-}
-.footer-container .footer-text {
-  display: flex;
-  /*flex-direction: column;*/
-  margin-top: 15px;
-  line-height: 27px;
-}
-.footer-container .ft-paragraph {
-  font-size: 16px;
-  font-weight: 400;
-}
-.footer-container .info-ft {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.footer-container .mentions-contact {
-  font-weight: 300;
-  font-size: 16px;
-  text-decoration: none;
+.footer-container {
+  background: #353535;
+  font-family: "Roboto", serif;
   color: white;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-container {
-    background: #353535;
-    font-family: "Roboto", serif;
-    color: white;
-    padding: 25px;
-    margin-top: 70px;
-  }
+  padding: 25px;
+  margin-top: 70px;
 }
 .footer-container h4 {
   font-family: "Shrikhand", serif;
@@ -1211,7 +1173,7 @@ footer .mentions-contact {
 }
 .footer-container .footer-text {
   display: flex;
-  /*flex-direction: column;*/
+  /* flex-direction: column; */
   margin-top: 15px;
   line-height: 27px;
 }
@@ -1315,274 +1277,133 @@ footer .mentions-contact {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .caisson {
-    /* Checked Styles */
-  }
-  .caisson__interactive--entrees {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background: white;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 10px 15px 10px 15px;
-    gap: 27px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  .caisson__interactive--entrees .caisson__paragraphe {
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .hidden-checkbox:checked + .caisson__interactive--entrees .caisson__paragraphe {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: calc(100% - 50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--entrees .caisson__prix {
-    transform: translateX(-50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--entrees .caisson__circle {
-    opacity: 1;
-    animation: slide-in 0.3s forwards;
-    transform: translateX(10px);
-  }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--entrees .caisson__circle {
-    animation: slide-out 0.3s forwards;
-    opacity: 0;
-  }
+.caisson {
+  /* Checked Styles */
+}
+.caisson__interactive--entrees {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background: white;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px 15px 10px 15px;
+  gap: 27px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.caisson__interactive--entrees .caisson__paragraphe {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.hidden-checkbox:checked + .caisson__interactive--entrees .caisson__paragraphe {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: calc(100% - 50px);
+}
+.hidden-checkbox:checked + .caisson__interactive--entrees .caisson__prix {
+  transform: translateX(-50px);
+}
+.hidden-checkbox:checked + .caisson__interactive--entrees .caisson__circle {
+  opacity: 1;
+  animation: slide-in 0.3s forwards;
+  transform: translateX(10px);
+}
+.hidden-checkbox:not(:checked) + .caisson__interactive--entrees .caisson__circle {
+  animation: slide-out 0.3s forwards;
+  opacity: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .caisson {
-    /* Checked Styles */
-  }
-  .caisson__interactive--entrees {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background: white;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 10px 15px 10px 15px;
-    gap: 27px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  .caisson__interactive--entrees .caisson__paragraphe {
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .hidden-checkbox:checked + .caisson__interactive--entrees .caisson__paragraphe {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: calc(100% - 50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--entrees .caisson__prix {
-    transform: translateX(-50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--entrees .caisson__circle {
-    opacity: 1;
-    animation: slide-in 0.3s forwards;
-    transform: translateX(10px);
-  }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--entrees .caisson__circle {
-    animation: slide-out 0.3s forwards;
-    opacity: 0;
-  }
+.caisson {
+  /* Checked Styles */
+}
+.caisson__interactive--note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background: white;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px 15px 10px 15px;
+  gap: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.caisson__interactive--note .caisson__paragraphe {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.hidden-checkbox:checked + .caisson__interactive--note .caisson__paragraphe {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: calc(100% - 50px);
+}
+.hidden-checkbox:checked + .caisson__interactive--note .caisson__prix {
+  transform: translateX(-50px);
+}
+.hidden-checkbox:checked + .caisson__interactive--note .caisson__circle {
+  opacity: 1;
+  animation: slide-in 0.3s forwards;
+  transform: translateX(10px);
+}
+.hidden-checkbox:not(:checked) + .caisson__interactive--note .caisson__circle {
+  animation: slide-out 0.3s forwards;
+  opacity: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .caisson {
-    /* Checked Styles */
-  }
-  .caisson__interactive--note {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background: white;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 10px 15px 10px 15px;
-    gap: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  .caisson__interactive--note .caisson__paragraphe {
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .hidden-checkbox:checked + .caisson__interactive--note .caisson__paragraphe {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: calc(100% - 50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--note .caisson__prix {
-    transform: translateX(-50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--note .caisson__circle {
-    opacity: 1;
-    animation: slide-in 0.3s forwards;
-    transform: translateX(10px);
-  }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--note .caisson__circle {
-    animation: slide-out 0.3s forwards;
-    opacity: 0;
-  }
+.caisson {
+  /* Checked Styles */
 }
-
-@media screen and (min-width: 768px) {
-  .caisson {
-    /* Checked Styles */
-  }
-  .caisson__interactive--note {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background: white;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 10px 15px 10px 15px;
-    gap: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  .caisson__interactive--note .caisson__paragraphe {
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .hidden-checkbox:checked + .caisson__interactive--note .caisson__paragraphe {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: calc(100% - 50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--note .caisson__prix {
-    transform: translateX(-50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--note .caisson__circle {
-    opacity: 1;
-    animation: slide-in 0.3s forwards;
-    transform: translateX(10px);
-  }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--note .caisson__circle {
-    animation: slide-out 0.3s forwards;
-    opacity: 0;
-  }
+.caisson__interactive--dess_note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background: white;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px 15px 10px 15px;
+  gap: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
-
-@media screen and (max-width: 767px) {
-  .caisson {
-    /* Checked Styles */
-  }
-  .caisson__interactive--dess_note {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background: white;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 10px 15px 10px 15px;
-    gap: 17px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  .caisson__interactive--dess_note .caisson__paragraphe {
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .hidden-checkbox:checked + .caisson__interactive--dess_note .caisson__paragraphe {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: calc(100% - 50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--dess_note .caisson__prix {
-    transform: translateX(-50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--dess_note .caisson__circle {
-    opacity: 1;
-    animation: slide-in 0.3s forwards;
-    transform: translateX(10px);
-  }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--dess_note .caisson__circle {
-    animation: slide-out 0.3s forwards;
-    opacity: 0;
-  }
+.caisson__interactive--dess_note .caisson__paragraphe {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-
-@media screen and (min-width: 768px) {
-  .caisson {
-    /* Checked Styles */
-  }
-  .caisson__interactive--dess_note {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background: white;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 10px 15px 10px 15px;
-    gap: 17px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  .caisson__interactive--dess_note .caisson__paragraphe {
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .hidden-checkbox:checked + .caisson__interactive--dess_note .caisson__paragraphe {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: calc(100% - 50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--dess_note .caisson__prix {
-    transform: translateX(-50px);
-  }
-  .hidden-checkbox:checked + .caisson__interactive--dess_note .caisson__circle {
-    opacity: 1;
-    animation: slide-in 0.3s forwards;
-    transform: translateX(10px);
-  }
-  .hidden-checkbox:not(:checked) + .caisson__interactive--dess_note .caisson__circle {
-    animation: slide-out 0.3s forwards;
-    opacity: 0;
-  }
+.hidden-checkbox:checked + .caisson__interactive--dess_note .caisson__paragraphe {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: calc(100% - 50px);
+}
+.hidden-checkbox:checked + .caisson__interactive--dess_note .caisson__prix {
+  transform: translateX(-50px);
+}
+.hidden-checkbox:checked + .caisson__interactive--dess_note .caisson__circle {
+  opacity: 1;
+  animation: slide-in 0.3s forwards;
+  transform: translateX(10px);
+}
+.hidden-checkbox:not(:checked) + .caisson__interactive--dess_note .caisson__circle {
+  animation: slide-out 0.3s forwards;
+  opacity: 0;
 }
 
 @media screen and (max-width: 767px) {
