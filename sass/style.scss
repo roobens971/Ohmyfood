@@ -7,15 +7,15 @@
 @import "utils/mixins";
 
 @import "layouts/fonctionnement";
-@import "components/icon";
+@import "components/icon-heart";
 @import "layouts/restaurants";
 @import "layouts/footer";
 @import "layouts/loader";
 
-@import "pages/header-palette";
+@import "pages/header-pages";
 @import "pages/images-menu";
-@import "pages/menu-palette";
-@import "pages/menu-entrées";
+@import "pages/container-menu";
+@import "pages/menu-entrees";
 @import "pages/menu-plats";
 @import "pages/menu-desserts";
 @import "components/btn-commander";
