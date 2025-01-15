@@ -687,7 +687,7 @@ footer .mentions-contact {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  padding: 0px 10px;
+  padding: 0px 7px;
 }
 .menu-entrees .titre-listes {
   color: #000;
@@ -831,7 +831,7 @@ footer .mentions-contact {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    padding: 0px 10px;
+    padding: 0px 7px;
     padding: 0px 100px 50px 100px;
     align-items: stretch;
   }
@@ -860,7 +860,7 @@ footer .mentions-contact {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  padding: 0px 10px;
+  padding: 0px 7px;
   margin-top: 45px;
 }
 .menu-plats .titre-listes {
@@ -930,7 +930,7 @@ footer .mentions-contact {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    padding: 0px 10px;
+    padding: 0px 7px;
     padding: 0px 100px 50px 100px;
     align-items: stretch;
   }
@@ -959,7 +959,7 @@ footer .mentions-contact {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  padding: 0px 10px;
+  padding: 0px 7px;
   margin-top: 45px;
 }
 .menu-desserts .titre-listes {
@@ -1104,7 +1104,7 @@ footer .mentions-contact {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    padding: 0px 10px;
+    padding: 0px 7px;
     margin-top: 45px;
     padding: 0px 100px 50px 100px;
     align-items: stretch;
