@@ -1131,37 +1131,7 @@ footer .mentions-contact {
   }
 }
 .footer-container {
-  background: #353535;
-  font-family: "Roboto", serif;
-  color: white;
-  padding: 25px;
   margin-top: 70px;
-}
-.footer-container h4 {
-  font-family: "Shrikhand", serif;
-  width: 100%;
-  font-size: 18px;
-}
-.footer-container .footer-text {
-  display: flex;
-  /*flex-direction: column;*/
-  margin-top: 15px;
-  line-height: 27px;
-}
-.footer-container .ft-paragraph {
-  font-size: 16px;
-  font-weight: 400;
-}
-.footer-container .info-ft {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.footer-container .mentions-contact {
-  font-weight: 300;
-  font-size: 16px;
-  text-decoration: none;
-  color: white;
 }
 
 .bloc-entrees {
