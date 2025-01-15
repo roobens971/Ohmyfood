@@ -266,23 +266,6 @@ header .logo {
   }
 }
 
-.mobile-screen-button {
-  width: 17px;
-  height: 21px;
-  fill: #7E7E7E;
-}
-
-.list-ul {
-  width: 17px;
-  height: 21px;
-  fill: #7E7E7E;
-}
-
-.fa-store {
-  color: #9356dc;
-  font-size: 17px;
-}
-
 .checkbox-container {
   position: absolute;
   display: inline-block;
@@ -1217,4 +1200,21 @@ footer .mentions-contact {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.mobile-screen-button {
+  width: 17px;
+  height: 21px;
+  fill: #7E7E7E;
+}
+
+.list-ul {
+  width: 17px;
+  height: 21px;
+  fill: #7E7E7E;
+}
+
+.fa-store {
+  color: #9356dc;
+  font-size: 17px;
 }/*# sourceMappingURL=style.css.map */

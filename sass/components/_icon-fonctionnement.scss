@@ -1,0 +1,13 @@
+@import "../utils/variables";
+
+.mobile-screen-button {
+  @include icon_fonctionnement;
+}
+.list-ul {
+  @include icon_fonctionnement;
+}
+
+.fa-store {
+  color: $primaryBtn;
+  font-size: 17px;
+}

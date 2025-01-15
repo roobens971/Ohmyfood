@@ -117,3 +117,10 @@
   padding: 0;
   bottom: 5px;
 }
+
+
+@mixin icon_fonctionnement{
+  width: 17px;
+  height: 21px;
+  fill: $icon-color;
+}
