@@ -1,0 +1,65 @@
+.caisson {
+  &__prix {
+    transition: transform 0.3s ease;
+    margin-top: 25px;
+  }
+
+  &__circle {
+    width: 50px;
+    height: 70px;
+    background-color: $tertiaryBtn;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    right: -40px; /* Start hidden outside */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: slide-in 0.3s forwards;
+    opacity: 0; /* Hidden by default */
+  }
+
+  .hidden-checkbox {
+    display: none;
+  }
+  .fa-circle-check {
+    padding: 25px 10px 15px 13px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  /* Checked Styles */
+  .hidden-checkbox:checked + &__interactive &__prix {
+    transform: translateX(-50px);
+  }
+
+  .hidden-checkbox:checked + &__interactive &__circle {
+    opacity: 1;
+    animation: slide-in 0.3s forwards;
+    transform: translateX(10px);
+  }
+
+  .hidden-checkbox:not(:checked) + &__interactive &__circle {
+    animation: slide-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  @keyframes slide-in {
+    from {
+      right: -40px;
+      opacity: 0;
+    }
+    to {
+      right: 10px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-out {
+    from {
+      right: 10px;
+      opacity: 1;
+    }
+    to {
+      right: -40px;
+      opacity: 0;
+    }
+  }
+}
