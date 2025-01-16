@@ -648,14 +648,14 @@ footer .mentions-contact {
   }
 }
 
-.menu-entrees {
+.menu-card {
   font-family: "Roboto", serif;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   padding: 0px 7px;
 }
-.menu-entrees .titre-listes {
+.menu-card .titre-listes {
   color: #000;
   text-transform: uppercase;
   position: relative;
@@ -663,13 +663,19 @@ footer .mentions-contact {
   width: 40px;
   margin-left: 8px;
 }
-.menu-entrees .titre-listes span {
+.menu-card .titre-listes span {
   font-weight: 300;
   font-size: 16px;
   position: relative;
   margin: 0;
   padding: 0;
   bottom: 5px;
+}
+
+.box-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .caisson {
@@ -721,7 +727,7 @@ footer .mentions-contact {
 
 /*Desktop*/
 @media screen and (min-width: 768px) {
-  .menu-entrees {
+  .menu-card {
     font-family: "Roboto", serif;
     margin-top: 20px;
     display: flex;
@@ -730,7 +736,7 @@ footer .mentions-contact {
     padding: 0px 100px 50px 100px;
     align-items: stretch;
   }
-  .menu-entrees .titre-listes {
+  .menu-card .titre-listes {
     color: #000;
     text-transform: uppercase;
     position: relative;
@@ -739,126 +745,11 @@ footer .mentions-contact {
     margin-left: 8px;
     margin-left: 0px;
   }
-  .menu-entrees .titre-listes span {
-    font-weight: 300;
-    font-size: 16px;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    bottom: 5px;
-  }
 }
 
-/*PLATS*/
-.menu-plats {
-  font-family: "Roboto", serif;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  padding: 0px 7px;
-  margin-top: 45px;
-}
-.menu-plats .titre-listes {
-  color: #000;
-  text-transform: uppercase;
-  position: relative;
-  border-bottom: 3px solid #99e2d0;
-  width: 40px;
-  margin-left: 8px;
-}
-.menu-plats .titre-listes span {
-  font-weight: 300;
-  font-size: 16px;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  bottom: 5px;
-}
-
-/*PLATS desktop*/
 @media screen and (min-width: 768px) {
-  .menu-plats {
-    font-family: "Roboto", serif;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 7px;
-    padding: 0px 100px 50px 100px;
-    align-items: stretch;
-  }
-  .menu-plats .titre-listes {
-    color: #000;
-    text-transform: uppercase;
-    position: relative;
-    border-bottom: 3px solid #99e2d0;
-    width: 40px;
-    margin-left: 8px;
-    margin-left: 0px;
-  }
-  .menu-plats .titre-listes span {
-    font-weight: 300;
-    font-size: 16px;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    bottom: 5px;
-  }
-}
-
-/*DESSERTS*/
-.menu-desserts {
-  font-family: "Roboto", serif;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  padding: 0px 7px;
-  margin-top: 45px;
-}
-.menu-desserts .titre-listes {
-  color: #000;
-  text-transform: uppercase;
-  position: relative;
-  border-bottom: 3px solid #99e2d0;
-  width: 40px;
-  margin-left: 8px;
-}
-.menu-desserts .titre-listes span {
-  font-weight: 300;
-  font-size: 16px;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  bottom: 5px;
-}
-
-/*DESSERTS desktop*/
-@media screen and (min-width: 768px) {
-  .menu-desserts {
-    font-family: "Roboto", serif;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 7px;
-    margin-top: 45px;
-    padding: 0px 100px 50px 100px;
-    align-items: stretch;
-  }
-  .menu-desserts .titre-listes {
-    color: #000;
-    text-transform: uppercase;
-    position: relative;
-    border-bottom: 3px solid #99e2d0;
-    width: 40px;
-    margin-left: 8px;
-    margin-left: 0px;
-  }
-  .menu-desserts .titre-listes span {
-    font-weight: 300;
-    font-size: 16px;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    bottom: 5px;
+  .box-menu {
+    gap: 0px;
   }
 }
 

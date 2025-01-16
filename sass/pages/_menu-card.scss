@@ -1,4 +1,4 @@
-.menu-entrees {
+.menu-card {
   @include entrees_plats_desserts_flex;
 
   .titre-listes {
@@ -8,6 +8,12 @@
       @include entrees_plats_desserts_titres_span;
     }
   }
+}
+
+.box-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .caisson {
@@ -65,7 +71,7 @@
 }
 
 /*Desktop*/
-.menu-entrees {
+.menu-card {
   @include tablette_desktop {
     @include entrees_plats_desserts_flex;
     padding: 0px 100px 50px 100px;
@@ -74,10 +80,12 @@
     .titre-listes {
       @include entrees_plats_desserts_titres;
       margin-left: 0px;
-
-      span {
-        @include entrees_plats_desserts_titres_span;
-      }
     }
+  }
+}
+
+.box-menu {
+  @include tablette_desktop {
+    gap: 0px;
   }
 }
