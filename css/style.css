@@ -678,53 +678,6 @@ footer .mentions-contact {
   gap: 30px;
 }
 
-.caisson {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-}
-.caisson .container {
-  position: relative;
-}
-.caisson .container strong {
-  margin: 0;
-}
-.caisson__textes .caisson__paragraphe {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 25px;
-}
-.caisson__textes strong {
-  font-weight: 500;
-  font-size: 18px;
-}
-.caisson__textes {
-  display: inline-flex;
-  flex-direction: column;
-  width: 100%;
-}
-.caisson__interactive {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-  background: white;
-  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 10px 15px 10px 15px;
-  gap: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-.hidden-checkbox:checked + .caisson__interactive .caisson__paragraphe {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: calc(100% - 50px);
-}
-
 /*Desktop*/
 @media screen and (min-width: 768px) {
   .menu-card {
@@ -835,7 +788,55 @@ footer .mentions-contact {
 }
 
 .caisson {
+  /***TEXT-PARAGRAPH-ELLIPSIS***/
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  /*******CHECKBOX-ANIMATION*******/
   /* Checked Styles */
+}
+.caisson__textes .caisson__paragraphe {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+}
+.caisson__textes strong {
+  font-weight: 500;
+  font-size: 18px;
+}
+.caisson__textes {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+.caisson__interactive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background: white;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px 15px 10px 15px;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.hidden-checkbox:checked + .caisson__interactive .caisson__paragraphe {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: calc(100% - 50px);
+}
+.caisson .hidden-checkbox {
+  display: none;
+}
+.caisson .fa-circle-check {
+  padding: 25px 10px 15px 13px;
+  font-size: 20px;
+  color: #fff;
 }
 .caisson__prix {
   transition: transform 0.3s ease;
@@ -851,14 +852,6 @@ footer .mentions-contact {
   transition: transform 0.3s ease, opacity 0.3s ease;
   animation: slide-in 0.3s forwards;
   opacity: 0; /* Hidden by default */
-}
-.caisson .hidden-checkbox {
-  display: none;
-}
-.caisson .fa-circle-check {
-  padding: 25px 10px 15px 13px;
-  font-size: 20px;
-  color: #fff;
 }
 .hidden-checkbox:checked + .caisson__interactive .caisson__prix {
   transform: translateX(-50px);

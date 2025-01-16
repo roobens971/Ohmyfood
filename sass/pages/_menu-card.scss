@@ -16,59 +16,6 @@
   gap: 30px;
 }
 
-.caisson {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-
-  .container {
-    position: relative;
-  }
-
-  .container strong {
-    margin: 0;
-  }
-
-  &__textes &__paragraphe {
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 25px;
-  }
-
-  &__textes strong {
-    font-weight: 500;
-    font-size: 18px;
-  }
-
-  &__textes {
-    display: inline-flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  &__interactive {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background: white;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 10px 15px 10px 15px;
-    gap: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hidden-checkbox:checked + &__interactive &__paragraphe {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: calc(100% - 50px);
-  }
-}
 
 /*Desktop*/
 .menu-card {
