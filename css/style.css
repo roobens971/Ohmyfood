@@ -1097,13 +1097,10 @@ footer .mentions-contact {
 .btn {
   text-align: center;
 }
-.btn a {
+.btn .commander {
   color: #fff;
   text-decoration: none;
   font-family: "Roboto", serif;
-}
-
-.commander {
   background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -1114,7 +1111,7 @@ footer .mentions-contact {
   font-size: 16px;
   margin: 40px 2px;
 }
-.commander:hover {
+.btn .commander:hover {
   background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   opacity: 0.7;
 }
